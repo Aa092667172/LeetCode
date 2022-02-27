@@ -1,6 +1,6 @@
 package easy;
 
-public class HappyNumber$202 {
+public class $202HappyNumber {
 	public boolean isHappy(int n) {
 		return true;
 	}

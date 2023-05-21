@@ -34,12 +34,7 @@ public class $412FizzBuzz {
 
   public List<String> fizzBuzz(int n) {
     List<String> answer = new ArrayList<>();
-
     for(int i=1;i<n+1;i++){
-      if(i==0){
-        answer.add("1");
-        continue;
-      }
       if(i % 3 == 0 && i % 5 == 0 ){
         answer.add("FizzBuzz");
       }else if(i % 3==0){
@@ -54,6 +49,6 @@ public class $412FizzBuzz {
   }
   public static void main(String[] args) {
     $412FizzBuzz $412FizzBuzz = new $412FizzBuzz();
-    System.out.println($412FizzBuzz.fizzBuzz(15));
+    System.out.println($412FizzBuzz.fizzBuzz(3));
   }
 }

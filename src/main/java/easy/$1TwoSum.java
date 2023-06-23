@@ -1,6 +1,8 @@
 package easy;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /*
@@ -12,16 +14,18 @@ import java.util.Map;
 
 public class $1TwoSum {
 	public int[] twoSum(int[] nums, int target) {
-		Map<Integer,Integer> map = new HashMap<>();
-
-		for(int i=0;i<nums.length;i++) {
-			int result = target-nums[i];
-			if(map.containsKey(result)) {
-				return new int [] {map.get(result),i};
+		Map<Integer, Integer> map = new HashMap<>();
+		for (int i = 0; i < nums.length; i++) {
+			int result = target - nums[i];
+			if (map.containsKey(result)) {
+				return new int[]{map.get(result), i};
 			}
-			map.put(nums[i],i);
+			map.put(nums[i], i);
 		}
-
-		return new int[] {};
-    }
+		return new int[]{};
+	}
+	public static void main(String[] args) {
+		$1TwoSum $1TwoSum = new $1TwoSum();
+		System.out.println(Arrays.toString($1TwoSum.twoSum(new int[]{3,2,4}, 6)));
+	}
 }

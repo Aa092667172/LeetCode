@@ -3,6 +3,9 @@ package easy;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ *  透過Set特性判斷是否有包含此key
+ */
 public class $217ContainsDuplicate {
   public boolean containsDuplicate(int[] nums) {
     Set<Integer> set = new HashSet<>();
